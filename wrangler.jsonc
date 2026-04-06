@@ -1,0 +1,21 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "b2-cross-region-copy-2",
+	"main": "./src/index.ts",
+	"compatibility_date": "2025-10-08",
+	"upload_source_maps": true,
+	"dispatch_namespaces": [
+		{
+			"binding": "DISPATCHER",
+			"namespace": "my-dispatch-namespace",
+			"remote": true
+		}
+	],
+	"observability": {
+		"enabled": true
+	},
+	"vars": {
+		"CLOUDFLARE_ACCOUNT_ID": "d70de8a1508adcd684b970c9353705f6",
+		"READONLY": "true"
+	}
+}
